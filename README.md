@@ -22,7 +22,7 @@ JAVA_OPTS: "-Xmx2g -Xms2g"
 
 For a quick startup you can run the following command to create the Brazil routing:
 ```
-docker run -p 8989:8989 rmmarquini/routeasy-graphhopper-docker --url https://download.geofabrik.de/south-america/brazil-latest.osm.pbf --host 0.0.0.0
+docker run -itd -v graphhopper --name graphhopper -p 8989:8989 ${DOCKER_HUB_ID}/routeasy-graphhopper-docker:${TAG} --url https://download.geofabrik.de/south-america/brazil-latest.osm.pbf --host 0.0.0.0
 ```
 Then surf to `http://localhost:8989/`
 
