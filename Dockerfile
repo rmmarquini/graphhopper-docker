@@ -8,7 +8,7 @@ RUN mvn clean install
 
 FROM eclipse-temurin:21.0.1_12-jre
 
-ENV JAVA_OPTS "-Xmx1g -Xms1g"
+ENV JAVA_OPTS "-Xmx2g -Xms2g"
 
 RUN mkdir -p /data
 
