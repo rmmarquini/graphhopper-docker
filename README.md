@@ -17,7 +17,7 @@ Feel free to submit issues or pull requests if you would like to improve the cod
 
 This docker image uses the following default environment setting:
 ```
-JAVA_OPTS: "-Xmx2g -Xms2g"
+JAVA_OPTS: "-Xmx16g -Xms2g"
 ```
 
 For a quick startup you can run the following command to create the Brazil routing:
