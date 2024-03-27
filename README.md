@@ -33,4 +33,10 @@ docker run --entrypoint /bin/bash rmmarquini/routeasy-graphhopper-docker -c "wge
 
 Checkout `graphhopper.sh` for more usage options such as import.
 
-In order to build the docker image locally, please run [`.github/build.sh`](.github/build.sh).
+In order to build the docker image locally, please run [`./build.sh`](./build.sh).
+Also, you will need to set up an .env file with the following informations:
+```
+DOCKERHUB_USER=
+DOCKERHUB_TOKEN=
+```
+[Setting up Docker access tokens](https://docs.docker.com/security/for-developers/access-tokens/)
